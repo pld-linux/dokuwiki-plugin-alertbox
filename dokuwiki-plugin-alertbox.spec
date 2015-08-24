@@ -20,6 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Add Bootstrap style alert boxes to your wiki.
 
+First, make sure you have a template that provides Bootstrap (such as
+dokubootstrapsimplified or dokutwitterbootstrap)! These provide
+necessary CSS, and without them, the alert boxes won't show up.
+
 %prep
 %setup -qc
 mv dokuwiki-%{plugin}-*/* .
